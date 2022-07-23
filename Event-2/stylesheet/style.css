@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+h1{
+    animation:translation2 1s ease; 
+}
+
+body{
+    background-image: url("./Images/back2-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:scroll;
+}
+.all .h1{
+    color:rgb(255, 255, 255);
+    text-align:left;
+    transform: translateY(20px) translateX(10px);
+    font-family: 'Cormorant SC', serif; 
+}
+
+.all{
+    background-color:black;
+    width:200px;
+    height:643px;
+}
+
+li{
+    padding-top:55px;
+    color:azure;
+    font-size: 15px;
+}
+
+li a{
+    text-decoration:none;
+}
+
+li a:hover{
+    font-size: 20px;
+    color:white;
+    transition:font-size .4s;
+}
+
+.navigation{
+    display: flex;
+}
+/*card Starts*/
+.card{
+    border-radius: 30px;
+}
+.card-body{
+    width: 600px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.card-group{
+    padding-left: 20px;
+    background-color: transparent;
+    margin-top: 70px;
+    margin-left:px;
+    height: 450px;
+    width: 1500px;
+}
+.card-body{
+    margin-left: 30px;
+}
+.cr1{
+    margin-right: 30px;
+}
+.cr2{
+    margin-right: 30px;
+}
+.cr3{
+    margin-right: 30px;
+}
+/*card Ends*/
+
+@media screen and (max-width:1200px) {
+    .all{
+        background-color: transparent;
+    }
+    .navigation button{
+        display:inline-block
+    }
+}
+@media screen and (min_width:100px) and (max-width:600px){
+
+}
+
+/*Keyframes start*/
+@keyframes translation2{
+    from{
+        transform:translateX(-100px) translateY(-100px);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0) translateY(0px);
+        opacity:1;
+    }
+}
+/*Keyframes ends*/
+
