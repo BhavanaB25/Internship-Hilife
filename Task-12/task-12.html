@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p id="txt"></p>
+        <script> 
+            //Display
+            var text = "Hello";
+            document.getElementById('txt').innerHTML = text;
+            
+            //Creating Element
+            var text2 = document.createElement('span');
+
+            //Setting Attribute
+            text2.setAttribute('id','txt2');
+
+            //Creating text
+            text2.innerText = 'Welcome to this Webpage';
+
+            //Giving Styles
+            text2.style.color = 'crimson';
+            text2.style.fontSize = '30px';
+            text2.style.backgroundColor = 'black';
+            text2.style.borderRadius = '30px';
+
+            //Display
+            document.body.appendChild(text2);
+        </script>
+</body>
+</html>
